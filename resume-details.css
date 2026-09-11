@@ -1,0 +1,11 @@
+.credentials { border-top: 2px solid var(--ink); padding: 75px 0 105px; }
+.credential-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1.5px solid var(--ink); }
+.credential-grid article { min-height: 215px; padding: 25px; border-right: 1.5px solid var(--ink); }
+.credential-grid article:nth-child(3n) { border-right: 0; }
+.credential-grid article:nth-child(6) { background: var(--acid); color: var(--cream); }
+.credential-grid article:nth-child(4) { border-right: 1.5px solid var(--ink); }
+.credential-grid span { display: block; margin-bottom: 55px; font: 10px "DM Mono", monospace; letter-spacing: .1em; }
+.credential-grid h3 { max-width: 260px; font-size: 25px; line-height: .98; letter-spacing: -.055em; margin-bottom: 14px; }
+.credential-grid p { color: var(--muted); line-height: 1.4; margin: 0; }
+.credential-grid article:nth-child(6) p { color: var(--cream); }
+@media (max-width: 700px) { .credentials { padding: 62px 0 84px; } .credential-grid { grid-template-columns: 1fr; } .credential-grid article { min-height: 0; border-right: 0; border-bottom: 1.5px solid var(--ink); } .credential-grid article:last-child { border-bottom: 0; } .credential-grid span { margin-bottom: 30px; } }
