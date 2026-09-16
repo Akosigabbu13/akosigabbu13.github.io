@@ -1,95 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A proof-led developer portfolio spanning full-stack software, connected devices, XR, and hands-on technical support." />
-    <title>Gab Alcantara — Systems-Minded Builder</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="interactive.css" />
-    <link rel="stylesheet" href="business-card.css" />
-    <link rel="stylesheet" href="resume-details.css" />
-    <link rel="stylesheet" href="night-mode.css" id="night-mode" />
-    <link rel="stylesheet" href="motion.css" />
-  </head>
-  <body>
-    <div class="noise"></div>
-    <header class="nav shell">
-      <a class="logo" href="#top" aria-label="Home"><span>GAB</span> / BUILD LOG</a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Selected work</a>
-        <a href="#about">About</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to light mode"><span aria-hidden="true">☾</span><b>Dark</b></button>
-        <a class="nav-cta" href="#contact">Let’s talk <i>↗</i></a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero shell">
-        <div class="eyebrow"><span class="pulse"></span> Available for ambitious things</div>
-        <h1>I build things.<br />Then I <em>learn how they work.</em></h1>
-        <div class="hero-bottom">
-          <p class="hero-copy">I’m Gabriel: a systems-minded builder who likes understanding the mechanics, tuning the details, and turning interesting ideas into things people can actually use.</p>
-          <a class="round-link" href="#work">See the proof <span>↓</span></a>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Gabriel Alcantara's virtual museum of software, systems, and technical work.">
+  <title>Gabriel Alcantara — Museum of Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="museum.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="museum-nav shell"><a href="#top">GABRIEL ALCANTARA <span>— MUSEUM OF WORK</span></a><nav><a href="#projects">Gallery</a><a href="#toolkit">Toolkit</a><a href="#profile">Contact</a></nav></header>
+  <main id="top">
+    <section class="museum-hero shell">
+      <p class="kicker">PERMANENT COLLECTION / 2026</p>
+      <div class="hero-grid">
+        <div class="intro">
+          <p class="label">EXHIBIT 01 / INTRODUCTION</p>
+          <h1>Building systems<br>worth <em>understanding.</em></h1>
+          <p>Gabriel Alcantara is a full-stack and embedded-systems builder working across software, connected devices, XR, and practical technical support.</p>
+          <a class="cv-button" href="assets/Gabriel-Alcantara-CV.pdf" download>Download CV <b>↓</b></a>
         </div>
-        <div class="signal-map" aria-label="System map illustration">
-          <span class="map-status">LIVE SYSTEM MAP</span>
-          <div class="map-label l1">IDEA</div><div class="map-label l2">INTERFACE</div><div class="map-label l3">SYSTEM</div><div class="map-label l4">IMPACT</div>
-          <svg viewBox="0 0 1000 240" preserveAspectRatio="none">
-            <path d="M45 186 C150 186 128 60 250 60 S358 177 474 177 S572 72 690 72 S789 148 954 34" />
-            <circle cx="45" cy="186" r="7"/><circle cx="250" cy="60" r="7"/><circle cx="474" cy="177" r="7"/><circle cx="690" cy="72" r="7"/><circle cx="954" cy="34" r="7"/>
-          </svg>
-        </div>
-      </section>
-
-      <section class="marquee" aria-label="Capabilities"><div><span>UNDERSTAND THE SYSTEM</span><b>✦</b><span>TUNE THE DETAILS</span><b>✦</b><span>BUILD THE THING</span><b>✦</b><span>TEST WHAT MATTERS</span><b>✦</b><span>UNDERSTAND THE SYSTEM</span></div></section>
-
-      <section class="work shell" id="work">
-        <div class="section-heading"><p class="eyebrow">01 / Selected work</p><h2>Not just ideas.<br />Receipts.</h2><p>Projects that show how I think, make, and ship.</p></div>
-        <div class="projects">
-          <article class="project featured">
-            <div class="project-art rehab-art real-art"><img src="assets/stingray-smart-bar.png" alt="Stingray Smart Bar concept showing precision touch, spatial audio, and luminous cues" /><span class="art-tag">HEALTH × HARDWARE</span></div>
-            <div class="project-info"><div><p class="project-number">01</p><h3>Stingray Smart Bar</h3></div><div><p class="project-type">MindBridge XR · Rehabilitation technology</p><p class="project-desc">An exercise bar that tracks X, Y, and Z movement to help athletes and older adults perfect form and reduce potential injury risk.</p><button class="case-link" data-modal="stingray">Behind the build <span>↗</span></button> <a class="case-link" href="https://github.com/encoding-yen/MindBridgeXR" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
-          </article>
-          <div class="project-pair">
-            <article class="project compact">
-              <div class="project-art dream-art real-art"><img src="assets/dreamveil.png" alt="Dreamveil visual identity" /><span class="art-tag">GENAI CONCEPT</span></div>
-              <div class="compact-info"><p class="project-number">02 / Independent build</p><h3>Dreamveil</h3><p>A GenAI project that transforms dreams into visual storyboards—built as an exploration of expressive, founder-minded product thinking.</p><button class="case-link" data-modal="dreamveil">Behind the build <span>↗</span></button> <a class="case-link" href="https://github.com/Saads-Personal-Startup-Projects/dreamweaverv2" target="_blank" rel="noreferrer">Frontend <span>↗</span></a> <a class="case-link" href="https://github.com/Saads-Personal-Startup-Projects/DreamveilBackend" target="_blank" rel="noreferrer">Backend <span>↗</span></a></div>
-            </article>
-            <article class="project compact afssc-card">
-              <div class="project-art afssc-art real-art"><img src="assets/afssc-pisq.png" alt="Philippine International School Qatar emblem" /><span class="art-tag">SYSTEM BUILDER / 2022</span></div>
-              <div class="compact-info"><p class="project-number">03 / Capstone project</p><h3>AFSSC</h3><p>Automatic Fire Suppression System for Cars—a safety-focused capstone project built as lead programmer and system builder.</p><button class="case-link" data-modal="afssc">Behind the build <span>↗</span></button></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="capabilities" id="capabilities"><div class="shell"><div class="section-heading"><p class="eyebrow">02 / The toolbox</p><h2>Comfortable at<br />every layer.</h2></div><div class="cap-grid"><div><span>01</span><h3>Software</h3><p>Python, JavaScript, HTML/CSS, React/Vite, responsive UI, REST APIs, application debugging</p></div><div><span>02</span><h3>Backend & data</h3><p>FastAPI, PostgreSQL, SQL, SQLAlchemy, API development, real-time data workflows</p></div><div><span>03</span><h3>Physical computing</h3><p>Arduino, ESP32/ESP32-S3, C/C++, firmware, 9-DoF IMU sensors, I²C, MQTT, IoT, breadboard prototyping</p></div><div><span>04</span><h3>IT & hardware</h3><p>PC assembly, installation, diagnostics, troubleshooting, Windows deployment, BIOS, drivers, data recovery, performance optimisation</p></div><div><span>05</span><h3>Tools</h3><p>Git/GitHub, VS Code, Arduino IDE, PostgreSQL, Microsoft Excel, CapCut</p></div><div><span>06</span><h3>Experience & support</h3><p>XR, real-time data visualisation, technical documentation, end-user support, live-event technical operations</p></div></div></div></section>
-
-      <section class="experience shell">
-        <div class="section-heading"><p class="eyebrow">03 / Beyond the code</p><h2>I learn best<br />close to the work.</h2></div>
-        <div class="timeline">
-          <article><p class="timeline-date">XR / SPORT TECH</p><div><img class="institution-logo" src="assets/mindbridge-xr.png" alt="MindBridge XR logo" /><h3>MindBridge XR</h3><p>Built Stingray Smart Bar at the intersection of exercise technology, embedded sensing, and practical full-stack development.</p><button class="case-link" data-modal="mindbridge">More on this <span>↗</span></button></div></article>
-          <article><p class="timeline-date">FIELD EXPERIENCE</p><div class="no-logo"><h3>Freelance PC Technician</h3><p>Diagnosing hardware, solving technical issues, and communicating clearly with people who just need things to work.</p><button class="case-link" data-modal="technician">More on this <span>↗</span></button></div></article>
-          <article><p class="timeline-date">2023 - 2024 / LEADERSHIP</p><div><img class="institution-logo" src="assets/yfc-qatar.png" alt="Youth for Christ Qatar logo" /><h3>Technical Head · Youth for Christ Qatar</h3><p>Led the technical and audiovisual requirements behind live events and organisational activities.</p><button class="case-link" data-modal="technicalhead">More on this <span>↗</span></button></div></article>
-          <article><p class="timeline-date">2025 - 2026 / SIMULATION</p><div><img class="institution-logo" src="assets/qatar-university.png" alt="Qatar University logo" /><h3>Simulated Patient · Qatar University</h3><p>Supported medical education and clinical simulation activities with professionalism, consistency, and clear communication.</p><button class="case-link" data-modal="simulatedpatient">More on this <span>↗</span></button></div></article>
-          <article><p class="timeline-date">COMMUNITY</p><div><img class="institution-logo" src="assets/agriteq.png" alt="AgriTeQ logo" /><h3>AgriTeQ · UDST</h3><p>Student volunteer experience at a major agriculture and technology event—showing up, contributing, and staying curious outside the classroom.</p><button class="case-link" data-modal="agriteq">More on this <span>↗</span></button></div></article>
-        </div>
-      </section>
-
-      <section class="credentials shell"><p class="eyebrow">Proof points / The foundations</p><div class="credential-grid"><article><span>EDUCATION</span><h3>BSc Information Technology</h3><p>University of Doha for Science and Technology · 2023 - Present</p></article><article><span>EDUCATION / 2023</span><h3>Grade 12, With Honors</h3><p>Philippine International School - Qatar</p></article><article><span>2022 / SYSTEM BUILDER</span><h3>Automatic Fire Suppression System for Cars</h3><p>High-school capstone project · Lead Programmer / System Builder</p></article><article><span>RECOGNITION</span><h3>3rd Overall HS Capstone Project</h3><p>Philippine International School - Qatar · 2022</p></article><article><span>RECOGNITION</span><h3>4th Best Abstract, HS Capstone Project</h3><p>Philippine International School - Qatar · 2022</p></article><article><span>CERTIFICATE OF APPRECIATION</span><h3>AgriTeQ Exhibitor</h3><p>University of Doha for Science and Technology · 2026</p></article></div></section>
-
-      <section class="about shell" id="about"><div class="about-mark">?</div><div><p class="eyebrow">04 / A little more Gab</p><h2>Curiosity is<br />my operating system.</h2></div><div class="about-copy"><p>I’m drawn to systems with depth—whether that’s a game build, a PC setup, a racing model, or a product idea. I like knowing what moves the needle, what could break, and how the pieces affect one another.</p><p>I don’t enjoy surface-level answers. I like the research, trade-offs, and iterative tuning that turn a good idea into a reliable one. That instinct follows me from hardware and gaming into every product I build.</p></div></section>
-
-      <section class="profile shell" id="profile"><p class="eyebrow">05 / Find Gabriel online</p><div class="profile-card"><div><span class="profile-stamp">GAB</span><h2>Let’s stay<br />connected.</h2></div><div class="profile-links"><a href="mailto:alcantaragabriel1008@gmail.com"><small>EMAIL</small>alcantaragabriel1008@gmail.com <b>↗</b></a><a href="https://github.com/Akosigabbu13" target="_blank" rel="noreferrer"><small>GITHUB</small>github.com/Akosigabbu13 <b>↗</b></a><a href="https://www.linkedin.com/in/gabriel-alcantara-7a6660297/" target="_blank" rel="noreferrer"><small>LINKEDIN</small>Gabriel Alcantara <b>↗</b></a><a href="https://www.instagram.com/hellothisisgabbu/" target="_blank" rel="noreferrer"><small>INSTAGRAM</small>@hellothisisgabbu <b>↗</b></a><a href="https://wa.me/97455605106" target="_blank" rel="noreferrer"><small>WHATSAPP</small>+974 5560 5106 <b>↗</b></a></div></div></section>
-
-    </main>
-    <footer class="shell"><span>© <span id="year"></span> Gab Alcantara</span><span>Designed to be more useful than a CV.</span></footer>
-
-    <dialog id="project-modal"><button class="close" aria-label="Close">×</button><p class="eyebrow" id="modal-label"></p><h2 id="modal-title"></h2><p id="modal-body"></p><div id="modal-media"></div><p class="modal-note" id="modal-note">Add a live link, GitHub repository, screenshots, and measurable outcomes here when you have them.</p></dialog>
-    <script src="script.js"></script>
-  </body>
+        <figure class="portrait"><div><img src="assets/gabriel-alcantara-portrait.jpeg" alt="Gabriel Alcantara at a technology event"></div><figcaption><b>GABRIEL ALCANTARA</b>Systems-minded builder</figcaption></figure>
+      </div>
+      <div class="plinth">
+        <article><span>2026</span><b>Full-Stack & Embedded Systems Intern</b><p>MindBridge XR · Qatar Science and Technology Park</p></article>
+        <article><span>2023–PRESENT</span><b>BSc Information Technology</b><p>University of Doha for Science and Technology</p></article>
+        <article><span>2023</span><b>Grade 12, With Honors</b><p>Philippine International School - Qatar</p></article>
+        <article><span>2022</span><b>3rd Overall & 4th Best Abstract</b><p>PISQ Capstone Project competition</p></article>
+      </div>
+    </section>
+    <section class="marquee"><div><span>SOFTWARE</span><b>◆</b><span>EMBEDDED SYSTEMS</span><b>◆</b><span>XR</span><b>◆</b><span>REAL-WORLD PROTOTYPES</span><b>◆</b><span>SOFTWARE</span><b>◆</b><span>EMBEDDED SYSTEMS</span></div></section>
+    <section class="room shell" id="projects">
+      <div class="room-label"><span>GALLERY I</span><p>Selected projects</p></div><div class="room-title"><h2>Works on<br>display.</h2><p>Each piece is a record of how I approach a problem: observe it, understand it, and build a useful response.</p></div>
+      <div class="projects">
+        <article class="piece wide"><div class="piece-image"><img src="assets/stingray-smart-bar.png" alt="Stingray Smart Bar concept"></div><div class="caption"><span>01 / MINDBRIDGE XR</span><h3>Stingray Smart Bar</h3><p>Sensor-based rehabilitation technology built around movement feedback.</p><button data-modal="stingray">Open exhibit ↗</button></div></article>
+        <article class="piece"><div class="piece-image"><img src="assets/dreamveil.png" alt="Dreamveil visual identity"></div><div class="caption"><span>02 / INDEPENDENT BUILD</span><h3>Dreamveil</h3><p>GenAI that transforms dreams into visual storyboards.</p><button data-modal="dreamveil">Open exhibit ↗</button></div></article>
+        <article class="piece"><div class="piece-image"><img src="assets/afssc-pisq.png" alt="Philippine International School Qatar emblem"></div><div class="caption"><span>03 / CAPSTONE PROJECT</span><h3>AFSSC</h3><p>Automatic Fire Suppression System for Cars.</p><button data-modal="afssc">Open exhibit ↗</button></div></article>
+      </div>
+    </section>
+    <section class="room toolkit" id="toolkit"><div class="shell">
+      <div class="room-label"><span>GALLERY II</span><p>Toolkit</p></div><div class="room-title"><h2>Materials &<br>methods.</h2><p>A varied toolkit lets me follow a problem from interface to database to device.</p></div>
+      <div class="tool-grid">
+        <article><span>01</span><h3>Software</h3><p>Python, JavaScript, HTML/CSS, React/Vite, responsive UI, REST APIs, application debugging</p></article>
+        <article><span>02</span><h3>Backend & data</h3><p>FastAPI, PostgreSQL, SQL, SQLAlchemy, API development, real-time data workflows</p></article>
+        <article><span>03</span><h3>Physical computing</h3><p>Arduino, ESP32/ESP32-S3, C/C++, firmware, IMU sensors, I²C, MQTT, IoT</p></article>
+        <article><span>04</span><h3>IT & hardware</h3><p>PC assembly, diagnostics, Windows deployment, BIOS, drivers, data recovery</p></article>
+        <article><span>05</span><h3>Tools</h3><p>Git/GitHub, VS Code, Arduino IDE, PostgreSQL, Microsoft Excel, CapCut</p></article>
+        <article><span>06</span><h3>Experience & support</h3><p>XR, technical documentation, end-user support, live-event operations</p></article>
+      </div></div>
+    </section>
+    <section class="room shell" id="experience">
+      <div class="room-label"><span>GALLERY III</span><p>Experience</p></div><div class="room-title"><h2>Places that<br>shaped the work.</h2><p>Teams, live environments, and people who needed technology to work.</p></div>
+      <div class="timeline">
+        <article><p>2026 / XR & SPORT TECH</p><div><img src="assets/mindbridge-xr.png" alt="MindBridge XR logo"><h3>MindBridge XR</h3><span>Full-Stack & Embedded Systems Intern</span><button data-modal="mindbridge">Read label ↗</button></div></article>
+        <article><p>2024–PRESENT / FIELD WORK</p><div><h3>Freelance PC Technician</h3><span>Independent technical support</span><button data-modal="technician">Read label ↗</button></div></article>
+        <article><p>2023–2024 / LEADERSHIP</p><div><img src="assets/yfc-qatar.png" alt="Youth for Christ Qatar logo"><h3>Youth for Christ Qatar</h3><span>Technical Head</span><button data-modal="technicalhead">Read label ↗</button></div></article>
+        <article><p>2025–2026 / SIMULATION</p><div><img src="assets/qatar-university.png" alt="Qatar University logo"><h3>Qatar University</h3><span>Simulated Patient</span><button data-modal="simulatedpatient">Read label ↗</button></div></article>
+        <article><p>2026 / COMMUNITY</p><div><img src="assets/agriteq.png" alt="AgriTeQ logo"><h3>AgriTeQ · UDST</h3><span>Student volunteer</span><button data-modal="agriteq">Read label ↗</button></div></article>
+      </div>
+    </section>
+    <section class="room shell" id="credentials">
+      <div class="room-label"><span>GALLERY IV</span><p>Credentials</p></div><div class="room-title"><h2>Provenance.</h2><p>Education, recognition, and milestones behind the collection.</p></div>
+      <div class="wall">
+        <article><span>EDUCATION / PRESENT</span><h3>BSc Information Technology</h3><p>University of Doha for Science and Technology</p></article>
+        <article><span>EDUCATION / 2023</span><h3>Grade 12, With Honors</h3><p>Philippine International School - Qatar</p></article>
+        <article><span>RECOGNITION / 2022</span><h3>3rd Overall HS Capstone Project</h3><p>Philippine International School - Qatar</p></article>
+        <article><span>RECOGNITION / 2022</span><h3>4th Best Abstract, HS Capstone Project</h3><p>Philippine International School - Qatar</p></article>
+        <article><span>CERTIFICATE / 2026</span><h3>AgriTeQ Exhibitor</h3><p>University of Doha for Science and Technology</p></article>
+      </div>
+    </section>
+    <section class="room shell" id="about"><div class="room-label"><span>GALLERY V</span><p>Artist statement</p></div><div class="statement"><p>“I’m drawn to systems with depth—things that reward curiosity, research, and careful tuning.”</p><div><h2>Curiosity is my operating system.</h2><p>I like knowing what moves the needle, what could break, and how the pieces affect one another. That mindset follows me from hardware and gaming into every product I build.</p></div></div></section>
+    <section class="room shell" id="profile"><div class="room-label"><span>VISITOR SERVICES</span><p>Find Gabriel online</p></div><div class="profile"><div><span>GAB</span><h2>Let’s stay<br>connected.</h2></div><div><a href="mailto:alcantaragabriel1008@gmail.com"><small>EMAIL</small>alcantaragabriel1008@gmail.com ↗</a><a href="https://github.com/Akosigabbu13" target="_blank"><small>GITHUB</small>github.com/Akosigabbu13 ↗</a><a href="https://www.linkedin.com/in/gabriel-alcantara-7a6660297/" target="_blank"><small>LINKEDIN</small>Gabriel Alcantara ↗</a><a href="https://www.instagram.com/hellothisisgabbu/" target="_blank"><small>INSTAGRAM</small>@hellothisisgabbu ↗</a><a href="https://wa.me/97455605106" target="_blank"><small>WHATSAPP</small>+974 5560 5106 ↗</a></div></div></section>
+  </main>
+  <footer class="shell"><span>© <span id="year"></span> Gabriel Alcantara</span><span>Curated as a working archive.</span></footer>
+  <dialog id="project-modal"><button class="close" aria-label="Close">×</button><p class="label" id="modal-label"></p><h2 id="modal-title"></h2><p id="modal-body"></p><p id="modal-note"></p></dialog>
+  <script src="script.js"></script>
+</body>
 </html>
