@@ -2,80 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Gabriel Alcantara's virtual museum of software, systems, and technical work.">
-  <title>Gabriel Alcantara — Museum of Work</title><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="icon" href="favicon.ico" sizes="any"><link rel="manifest" href="site.webmanifest">
+  <meta name="description" content="John Gabriel Alcantara — Full-Stack and Embedded Systems Developer.">
+  <title>John Gabriel Alcantara — Developer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="icon" href="favicon.ico" sizes="any"><link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="museum.css"><link rel="stylesheet" href="museum-overrides.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="showcase.css"><link rel="stylesheet" href="showcase-motion.css"><link rel="stylesheet" href="showcase-hero-portrait.css">
 </head>
 <body>
-  <div class="noise"></div>
-  <header class="museum-nav shell"><a href="#top">GABRIEL ALCANTARA <span>— MUSEUM OF WORK</span></a><nav><a href="#projects">Projects</a><a href="#toolkit">Toolkit</a><a href="#experience">Experience</a><a href="#credentials">Credentials</a><a href="#about">About</a></nav></header>
+  <header class="site-nav">
+    <a class="brand" href="#top" aria-label="John Gabriel Alcantara home">JGA<span>®</span></a>
+    <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#toolkit">Toolkit</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="assets/Gabriel-Alcantara-CV.pdf" download>Download CV <span>↓</span></a>
+  </header>
   <main id="top">
-    <section class="museum-hero shell">
-      <p class="kicker">PERMANENT COLLECTION / 2026</p>
-      <div class="hero-grid">
-        <div class="intro">
-          <p class="label">EXHIBIT 01 / INTRODUCTION</p>
-          <h1>Building systems<br>worth <em>understanding.</em></h1>
-          <p>I’m Gabriel, an Embedded Systems and Full-Stack Developer who enjoys following an idea all the way through—from the interface and API to the sensors, firmware, and real-world setup. I build useful, understandable technology across software, connected devices, XR, and hands-on technical support.</p>
-          <a class="cv-button" href="assets/Gabriel-Alcantara-CV.pdf" download>Download CV <b>↓</b></a>
-          <div class="intro-links"><a href="mailto:alcantaragabriel1008@gmail.com"><small>EMAIL</small>Write to me ↗</a><a href="https://github.com/Akosigabbu13" target="_blank" rel="noreferrer"><small>GITHUB</small>View code ↗</a><a href="https://www.linkedin.com/in/gabriel-alcantara-7a6660297/" target="_blank" rel="noreferrer"><small>LINKEDIN</small>Connect ↗</a><a href="https://www.instagram.com/hellothisisgabbu/" target="_blank" rel="noreferrer"><small>INSTAGRAM</small>@hellothisisgabbu ↗</a><a href="https://wa.me/97455605106" target="_blank" rel="noreferrer"><small>WHATSAPP</small>+974 5560 5106 ↗</a></div>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">JGA / SYSTEMS DIVISION / 2026</p>
+        <h1>Gabriel<br><em>Alcantara.</em></h1>
+        <p class="hero-role">Full-Stack Developer <i>+</i> Embedded Systems</p>
+        <p class="hero-intro">I build software that reaches beyond the screen—from polished interfaces and data systems to connected devices that work in the real world.</p>
+        <a class="scroll-cue" href="#work">Explore the work <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Portrait of Gabriel Alcantara">
+        <img src="assets/gabriel-ascii-portrait.png" alt="Gabriel Alcantara in a green halftone portrait">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <p>FULL-STACK<br>EMBEDDED<br>BUILDER</p>
+      </div>
+      <div class="hero-stats" aria-label="Key credentials">
+        <article><b>2026</b><span>MindBridge XR<br>Systems Intern</span></article>
+        <article><b>2023—</b><span>BSc Information<br>Technology · UDST</span></article>
+        <article><b>02</b><span>Capstone awards<br>at PISQ</span></article>
+      </div>
+    </section>
+
+    <section class="manifesto" aria-label="Introduction">
+      <p>Software is only <em>useful</em> when it meets the world.</p>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-top"><p class="eyebrow">01 / SELECTED WORK</p><p>Scroll to reveal</p></div>
+      <article class="feature-project stingray">
+        <div class="project-copy">
+          <p class="eyebrow">MINDBRIDGE XR / 2026</p><h2>Stingray<br><em>Smart Bar.</em></h2>
+          <p>An exercise bar that turns subtle movement into usable feedback—made to help athletes and older adults train with safer form.</p>
+          <button data-modal="stingray">View case study <span>↗</span></button>
         </div>
-        <figure class="portrait"><div><img src="assets/gabriel-alcantara-portrait.jpeg" alt="Gabriel Alcantara at a technology event"></div><figcaption><b>GABRIEL ALCANTARA</b>Embedded Systems and Full-Stack Developer</figcaption><div class="portrait-note"><span>CURRENTLY ON VIEW</span><p>Building useful technology from interface to firmware—with curiosity, care, and real-world constraints in mind.</p><div><b>SOFTWARE</b><b>DEVICES</b><b>SUPPORT</b></div></div></figure>
-      </div>
-      <div class="plinth">
-        <article><span>2026</span><b>Full-Stack & Embedded Systems Intern</b><p>MindBridge XR · Qatar Science and Technology Park</p></article>
-        <article><span>2023–PRESENT</span><b>BSc Information Technology</b><p>University of Doha for Science and Technology</p></article>
-        <article><span>2023</span><b>Grade 12, With Honors</b><p>Philippine International School - Qatar</p></article>
-        <article><span>2022</span><b>3rd Overall & 4th Best Abstract</b><p>PISQ Capstone Project competition</p></article>
+        <div class="project-visual"><img src="assets/stingray-smart-bar.png" alt="Stingray Smart Bar"></div>
+      </article>
+      <div class="project-pair">
+        <article class="mini-project dreamveil"><img src="assets/dreamveil.png" alt="Dreamveil visual identity"><div><p class="eyebrow">02 / GENAI PRODUCT</p><h3>Dreamveil.</h3><button data-modal="dreamveil">Explore <span>↗</span></button></div></article>
+        <article class="mini-project afssc"><img src="assets/afssc-pisq.png" alt="Philippine International School Qatar emblem"><div><p class="eyebrow">03 / CAPSTONE</p><h3>AFSSC.</h3><button data-modal="afssc">Explore <span>↗</span></button></div></article>
       </div>
     </section>
-    <section class="marquee" aria-label="Areas of work"><div><span>SOFTWARE</span><b>◆</b><span>EMBEDDED SYSTEMS</span><b>◆</b><span>FULL-STACK DEVELOPMENT</span><b>◆</b><span>CONNECTED DEVICES</span><b>◆</b><span>XR</span><b>◆</b><span>IOT & HARDWARE</span><b>◆</b><span>PRODUCT ENGINEERING</span><b>◆</b><span>TECHNICAL SUPPORT</span><b>◆</b><span>SOFTWARE</span><b>◆</b><span>EMBEDDED SYSTEMS</span><b>◆</b><span>FULL-STACK DEVELOPMENT</span><b>◆</b><span>CONNECTED DEVICES</span><b>◆</b><span>XR</span><b>◆</b><span>IOT & HARDWARE</span><b>◆</b><span>PRODUCT ENGINEERING</span><b>◆</b><span>TECHNICAL SUPPORT</span><b>◆</b><span>SOFTWARE</span><b>◆</b><span>EMBEDDED SYSTEMS</span><b>◆</b><span>FULL-STACK DEVELOPMENT</span><b>◆</b><span>CONNECTED DEVICES</span><b>◆</b><span>XR</span><b>◆</b><span>IOT & HARDWARE</span><b>◆</b><span>PRODUCT ENGINEERING</span><b>◆</b><span>TECHNICAL SUPPORT</span><b>◆</b></div></section>
-    <section class="room shell" id="projects">
-      <div class="room-label"><span>GALLERY I</span><p>Selected projects</p></div><div class="room-title"><h2>Works on<br>display.</h2><p>Each piece is a record of how I approach a problem: observe it, understand it, and build a useful response.</p></div>
-      <div class="projects">
-        <article class="piece wide"><div class="piece-image"><img src="assets/stingray-smart-bar.png" alt="Stingray Smart Bar concept"></div><div class="caption"><span>01 / MINDBRIDGE XR</span><h3>Stingray Smart Bar</h3><p>Sensor-based rehabilitation technology built around movement feedback.</p><button data-modal="stingray">Open exhibit ↗</button></div></article>
-        <article class="piece"><div class="piece-image"><img src="assets/dreamveil.png" alt="Dreamveil visual identity"></div><div class="caption"><span>02 / INDEPENDENT BUILD</span><h3>Dreamveil</h3><p>GenAI that transforms dreams into visual storyboards.</p><button data-modal="dreamveil">Open exhibit ↗</button></div></article>
-        <article class="piece"><div class="piece-image"><img src="assets/afssc-pisq.png" alt="Philippine International School Qatar emblem"></div><div class="caption"><span>03 / CAPSTONE PROJECT</span><h3>AFSSC</h3><p>Automatic Fire Suppression System for Cars.</p><button data-modal="afssc">Open exhibit ↗</button></div></article>
+
+    <section class="portrait-break">
+      <div class="portrait-copy"><p class="eyebrow">BUILT CLOSE TO THE WORK</p><h2>Curiosity<br>makes the <em>difference.</em></h2><p>I like finding how the system fits together: what moves the needle, what could break, and what makes an idea genuinely useful.</p></div>
+    </section>
+
+    <section class="toolkit" id="toolkit">
+      <div class="section-top"><p class="eyebrow">02 / THE TOOLKIT</p><p>From concept to deployment</p></div>
+      <h2>Every layer.<br><em>One direction.</em></h2>
+      <div class="tool-list">
+        <article><b>01</b><div><h3>Software</h3><p>Python, JavaScript, HTML/CSS, React/Vite, responsive UI, REST APIs, application debugging</p></div></article>
+        <article><b>02</b><div><h3>Backend & data</h3><p>FastAPI, PostgreSQL, SQL, SQLAlchemy, API development, real-time data workflows</p></div></article>
+        <article><b>03</b><div><h3>Physical computing</h3><p>Arduino, ESP32/ESP32-S3, C/C++, firmware, IMU sensors, I²C, MQTT, IoT</p></div></article>
+        <article><b>04</b><div><h3>IT & support</h3><p>PC assembly, diagnostics, Windows deployment, BIOS, drivers, data recovery, live operations</p></div></article>
       </div>
     </section>
-    <section class="room toolkit" id="toolkit"><div class="shell">
-      <div class="room-label"><span>GALLERY II</span><p>Toolkit</p></div><div class="room-title"><h2>Materials &<br>methods.</h2><p>A varied toolkit lets me follow a problem from interface to database to device.</p></div>
-      <div class="tool-grid">
-        <article><span>01</span><h3>Software</h3><p>Python, JavaScript, HTML/CSS, React/Vite, responsive UI, REST APIs, application debugging</p></article>
-        <article><span>02</span><h3>Backend & data</h3><p>FastAPI, PostgreSQL, SQL, SQLAlchemy, API development, real-time data workflows</p></article>
-        <article><span>03</span><h3>Physical computing</h3><p>Arduino, ESP32/ESP32-S3, C/C++, firmware, IMU sensors, I²C, MQTT, IoT</p></article>
-        <article><span>04</span><h3>IT & hardware</h3><p>PC assembly, diagnostics, Windows deployment, BIOS, drivers, data recovery</p></article>
-        <article><span>05</span><h3>Tools</h3><p>Git/GitHub, VS Code, Arduino IDE, PostgreSQL, Microsoft Excel, CapCut</p></article>
-        <article><span>06</span><h3>Experience & support</h3><p>XR, technical documentation, end-user support, live-event operations</p></article>
-      </div></div>
-    </section>
-    <section class="room shell" id="experience">
-      <div class="room-label"><span>GALLERY III</span><p>Experience</p></div><div class="room-title"><h2>Places that<br>shaped the work.</h2><p>Teams, live environments, and people who needed technology to work.</p></div>
-      <div class="timeline">
-        <article><p>2026 / XR & SPORT TECH</p><div><img src="assets/mindbridge-xr.png" alt="MindBridge XR logo"><h3>MindBridge XR</h3><span>Full-Stack & Embedded Systems Intern</span><button data-modal="mindbridge">Read label ↗</button></div></article>
-        <article><p>2024–PRESENT / FIELD WORK</p><div><h3>Freelance PC Technician</h3><span>Independent technical support</span><button data-modal="technician">Read label ↗</button></div></article>
-        <article><p>2023–2024 / LEADERSHIP</p><div><img src="assets/yfc-qatar.png" alt="Youth for Christ Qatar logo"><h3>Youth for Christ Qatar</h3><span>Technical Head</span><button data-modal="technicalhead">Read label ↗</button></div></article>
-        <article><p>2025–2026 / SIMULATION</p><div><img src="assets/qatar-university.png" alt="Qatar University logo"><h3>Qatar University</h3><span>Simulated Patient</span><button data-modal="simulatedpatient">Read label ↗</button></div></article>
-        <article><p>2026 / COMMUNITY</p><div><img src="assets/agriteq.png" alt="AgriTeQ logo"><h3>AgriTeQ · UDST</h3><span>Student volunteer</span><button data-modal="agriteq">Read label ↗</button></div></article>
+
+    <section class="experience" id="experience">
+      <div class="section-top"><p class="eyebrow">03 / EXPERIENCE</p><p>Places that shaped the work</p></div>
+      <div class="experience-list">
+        <article><p>2026 / XR + SPORT TECH</p><h3>MindBridge XR</h3><span>Full-Stack & Embedded Systems Intern</span><button data-modal="mindbridge">Details ↗</button></article>
+        <article><p>2024—PRESENT / FIELD WORK</p><h3>Freelance PC Technician</h3><span>Independent technical support</span><button data-modal="technician">Details ↗</button></article>
+        <article><p>2023—2024 / LEADERSHIP</p><h3>Youth for Christ Qatar</h3><span>Technical Head</span><button data-modal="technicalhead">Details ↗</button></article>
+        <article><p>2025—2026 / SIMULATION</p><h3>Qatar University</h3><span>Simulated Patient</span><button data-modal="simulatedpatient">Details ↗</button></article>
       </div>
     </section>
-    <section class="room shell" id="credentials">
-      <div class="room-label"><span>GALLERY IV</span><p>Credentials</p></div><div class="room-title"><h2>Provenance.</h2><p>Education, recognition, and milestones behind the collection.</p></div>
-      <div class="wall">
-        <article><span>EDUCATION / PRESENT</span><h3>BSc Information Technology</h3><p>University of Doha for Science and Technology</p></article>
-        <article><span>EDUCATION / 2023</span><h3>Grade 12, With Honors</h3><p>Philippine International School - Qatar</p></article>
-        <article><span>RECOGNITION / 2022</span><h3>3rd Overall HS Capstone Project</h3><p>Philippine International School - Qatar</p></article>
-        <article><span>RECOGNITION / 2022</span><h3>4th Best Abstract, HS Capstone Project</h3><p>Philippine International School - Qatar</p></article>
-        <article><span>CERTIFICATE / 2026</span><h3>AgriTeQ Exhibitor</h3><p>University of Doha for Science and Technology</p></article>
+
+    <section class="credentials">
+      <div class="section-top"><p class="eyebrow">04 / PROOF POINTS</p><p>Education + recognition</p></div>
+      <div class="credential-grid">
+        <article><p>EDUCATION / PRESENT</p><h3>BSc Information Technology</h3><span>University of Doha for Science and Technology</span></article>
+        <article><p>EDUCATION / 2023</p><h3>Grade 12, With Honors</h3><span>Philippine International School - Qatar</span></article>
+        <article><p>RECOGNITION / 2022</p><h3>3rd Overall & 4th Best Abstract</h3><span>PISQ High School Capstone Project</span></article>
+        <article class="accent"><p>CERTIFICATE / 2026</p><h3>AgriTeQ Exhibitor</h3><span>University of Doha for Science and Technology</span></article>
       </div>
     </section>
-    <section class="room shell" id="about"><div class="room-label"><span>GALLERY V</span><p>Artist statement</p></div><div class="statement"><p>“I’m drawn to systems with depth—things that reward curiosity, research, and careful tuning.”</p><div><h2>Curiosity is my operating system.</h2><p>I like knowing what moves the needle, what could break, and how the pieces affect one another. That mindset follows me from hardware and gaming into every product I build.</p></div></div></section>
-    <nav class="section-menu shell" aria-label="Museum sections"><a href="#top">01 / INTRODUCTION</a><a href="#projects">02 / PROJECTS</a><a href="#toolkit">03 / TOOLKIT</a><a href="#experience">04 / EXPERIENCE</a><a href="#credentials">05 / CREDENTIALS</a><a href="#about">06 / ABOUT</a></nav>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">START A CONVERSATION</p><h2>Have something<br><em>worth building?</em></h2>
+      <div class="contact-links"><a href="mailto:alcantaragabriel1008@gmail.com">Email <span>alcantaragabriel1008@gmail.com ↗</span></a><a href="https://github.com/Akosigabbu13" target="_blank" rel="noreferrer">GitHub <span>Akosigabbu13 ↗</span></a><a href="https://www.linkedin.com/in/gabriel-alcantara-7a6660297/" target="_blank" rel="noreferrer">LinkedIn <span>Gabriel Alcantara ↗</span></a><a href="https://www.instagram.com/hellothisisgabbu/" target="_blank" rel="noreferrer">Instagram <span>@hellothisisgabbu ↗</span></a></div>
+    </section>
   </main>
-  <footer class="shell"><span>© <span id="year"></span> Gabriel Alcantara</span><span>Curated as a working archive.</span></footer>
-  <dialog id="project-modal"><button class="close" aria-label="Close">×</button><p class="label" id="modal-label"></p><h2 id="modal-title"></h2><p id="modal-body"></p><p id="modal-note"></p></dialog>
+  <footer><span>© <span id="year"></span> John Gabriel Alcantara</span><span>JGA / Systems Division</span></footer>
+  <dialog id="project-modal"><button class="close" aria-label="Close dialog">×</button><p class="eyebrow" id="modal-label"></p><h2 id="modal-title"></h2><p id="modal-body"></p><p id="modal-note"></p></dialog>
   <script src="script.js"></script>
 </body>
 </html>

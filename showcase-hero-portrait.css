@@ -1,0 +1,74 @@
+.hero-art {
+  background: transparent;
+}
+
+.hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right bottom;
+  position: relative;
+  z-index: 0;
+  transform-origin: right top;
+}
+
+.hero-art::after {
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--ink) 0%, rgba(17, 22, 17, .55) 13%, transparent 34%, transparent 78%, rgba(17, 22, 17, .38) 94%, var(--ink) 100%),
+    linear-gradient(0deg, var(--ink) 0%, transparent 24%);
+}
+
+.hero-art p {
+  z-index: 2;
+}
+
+@media (min-width: 901px) {
+  .hero {
+    padding-right: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(520px, 1.1fr);
+  }
+
+  .hero-art {
+    margin-top: -72px;
+    height: calc(100% + 72px);
+  }
+}
+
+.hero h1 {
+  letter-spacing: -.075em;
+}
+
+.hero h1 em {
+  letter-spacing: -.055em;
+}
+
+.manifesto p,
+.project-copy h2,
+.toolkit h2,
+.contact h2,
+.portrait-copy h2 {
+  letter-spacing: -.065em;
+}
+
+.portrait-break {
+  grid-template-columns: 1fr;
+}
+
+.portrait-copy {
+  max-width: 780px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-right: 24px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding-right: 18px;
+  }
+}
