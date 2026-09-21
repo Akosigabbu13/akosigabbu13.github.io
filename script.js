@@ -70,18 +70,7 @@ if (!reduceMotion) {
   const animated = document.querySelectorAll(".feature-project, .mini-project, .portrait-copy, .tool-list article, .experience-list article, .credential-grid article, .contact");
   animated.forEach((element) => element.classList.add("will-reveal"));
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-revealed");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.16 });
+    entries.forEach((entry) => entry.target.classList.toggle("is-revealed", entry.isIntersecting));
+  }, { threshold: 0.14, rootMargin: "0px 0px -8%" });
   animated.forEach((element) => observer.observe(element));
-
-  const art = document.querySelector(".hero-art img");
-  window.addEventListener("scroll", () => {
-    const offset = Math.min(window.scrollY * .08, 48);
-    art.style.transform = "translateY(" + offset + "px) scale(1.18)";
-  }, { passive: true });
 }
