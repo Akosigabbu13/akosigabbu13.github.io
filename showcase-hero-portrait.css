@@ -34,6 +34,15 @@
     margin-top: -72px;
     height: calc(100% + 72px);
   }
+
+  .stingray {
+    height: clamp(420px, 52svh, 520px);
+    min-height: 0;
+  }
+
+  .stingray .project-copy h2 {
+    font-size: clamp(3.5rem, 5.8vw, 6.6rem);
+  }
 }
 
 .hero h1 {
@@ -75,18 +84,29 @@
 
 .portrait-break {
   grid-template-columns: .8fr 1.2fr;
+  background: var(--lime);
 }
 
 .portrait-copy {
   max-width: 780px;
 }
 
+.portrait-break .eyebrow {
+  color: var(--ink);
+}
+
 .portrait-break-art {
   width: 100%;
   height: min(76svh, 850px);
   justify-self: end;
-  object-fit: contain;
-  object-position: center right;
+  align-self: center;
+  object-fit: cover;
+  object-position: center;
+  background: #000;
+  mix-blend-mode: normal;
+  -webkit-mask-image: none;
+  mask-image: none;
+  clip-path: inset(0 14% 0 14%);
 }
 
 .toolkit .eyebrow,
@@ -172,6 +192,18 @@ button[data-modal] {
     height: min(62svh, 650px);
     justify-self: center;
     object-position: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .portrait-break {
+    grid-template-columns: .8fr 1.2fr;
+  }
+
+  .portrait-break-art {
+    height: min(64svh, 700px);
+    justify-self: end;
+    align-self: center;
   }
 }
 
