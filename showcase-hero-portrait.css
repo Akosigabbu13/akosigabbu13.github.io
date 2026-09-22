@@ -74,11 +74,19 @@
 }
 
 .portrait-break {
-  grid-template-columns: 1fr;
+  grid-template-columns: .8fr 1.2fr;
 }
 
 .portrait-copy {
   max-width: 780px;
+}
+
+.portrait-break-art {
+  width: 100%;
+  height: min(76svh, 850px);
+  justify-self: end;
+  object-fit: contain;
+  object-position: center right;
 }
 
 .toolkit .eyebrow,
@@ -102,6 +110,18 @@
 button[data-modal] {
   padding: 13px 18px;
   font-size: 12px;
+}
+
+.mindbridge-visual {
+  background: #fff;
+}
+
+.mindbridge-visual img {
+  object-fit: contain;
+  object-position: center;
+  padding: clamp(32px, 7vw, 120px);
+  transform: none;
+  animation: none;
 }
 
 @media (max-width: 900px) {
@@ -142,6 +162,16 @@ button[data-modal] {
 
   .feature-project .project-visual {
     order: -1;
+  }
+
+  .portrait-break {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-break-art {
+    height: min(62svh, 650px);
+    justify-self: center;
+    object-position: center;
   }
 }
 
