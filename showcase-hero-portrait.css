@@ -118,10 +118,39 @@ button[data-modal] {
     width: auto;
     margin-left: 0;
   }
+
+  .hero-art {
+    margin-inline: -24px;
+    background: var(--ink);
+    isolation: isolate;
+  }
+
+  .hero-art img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  }
+
+  .hero-art::after {
+    background:
+      linear-gradient(90deg, var(--ink) 0%, rgba(17, 22, 17, .35) 14%, transparent 32%, transparent 76%, rgba(17, 22, 17, .42) 92%, var(--ink) 100%),
+      linear-gradient(0deg, var(--ink) 0%, transparent 17%),
+      linear-gradient(180deg, var(--ink) 0%, transparent 14%);
+  }
+
+  .feature-project .project-visual {
+    order: -1;
+  }
 }
 
 @media (max-width: 520px) {
   .hero {
     padding-right: 18px;
+  }
+
+  .hero-art {
+    margin-inline: -18px;
   }
 }
